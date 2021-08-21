@@ -29,7 +29,7 @@ class WhoAmI extends Component{
 
     this.setState(state =>({years: ++state.years})) //change our obj (for dinamic changes)
     //or
-    
+
     // this.setState(state => {
     //   return  ({years: ++state.years})
     // }) 
@@ -61,10 +61,9 @@ const All= () =>{
 
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  <All />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
